@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="custom-scrollbar" id="customScrollbar"></div>
+    <header class="header">
+        <a href="/" class="logo">
+          <img src="./src/pharmacy-svgrepo.svg" alt="Logo" height="34" />
+          <span>Our brand</span>
+        </a>
+        <nav class="nav-center">
+          <a href="/home" class="nav-link">Home</a>
+          <a href="/" class="nav-link activated">Shop</a>
+          <a href="/contact" class="nav-link">Contact Us</a>
+        </nav>
+        <div class="nav-right">
+
+          <div class="cart-container">
+            <a class="nav-cart-link"
+              ><img src="./src/cart_svgrepo.svg" alt="cart-icon" /> Cart <span class="cart-count">0</span></a
+            >
+            <div class="cart-box">
+              <div class="cart-items">
+                <div class="cart-item">
+                  <img src="https://www.medicalsintl.com/kms/Utils/GetImage?location=/Content/uploads/Division/clear_1day220107093354421~.png&width=374&height=211" alt="Item 1" />
+                  <div class="item-info">
+                    <h4>Item 1</h4>
+                    <span>$10.00</span>
+                  </div>
+                  <button>Remove</button>
+                </div>
+                <div class="cart-item">
+                  <img src="https://media.pharmaciedesdrakkars.com/media/images/products/doliprane-1000-mg-doliprane8-1688647599.jpg" alt="Item 2" />
+                  <div class="item-info">
+                    <h4>Item 2</h4>
+                    <span>$20.00</span>
+                  </div>
+                  <button>Remove</button>
+                </div>
+                <div class="cart-item">
+                  <img src="https://www.chhealthsystem.com/images/1000x550/buy-amoxicillin-online.png" alt="Item 3" />
+                  <div class="item-info">
+                    <h4>Item 3</h4>
+                    <span>$30.00</span>
+                  </div>
+                  <button>Remove</button>
+                </div>
+              </div>
+              <div class="cart-footer">Total: $60.00</div>
+            </div>
+          </div>
+        </div>
+      </header>
+    <div class="search-Full">
+      <h1>Search</h1>
+      <p class="small-text">
+        Search for medicines, supplements, and healthcare products...
+      </p>
+      <br />
+      <div class="search-box">
+        <input type="text" class="the-photo" placeholder="Search by..." />
+      </div>
+    </div>
+    <div class="dropdown-container">
+      <div class="dropdown-left">
+        <!-- Dropdown 1 -->
+        <div class="menu-container" id="menu1">
+          <div class="menu-toggle" id="menuToggle1">
+            <span id="selectedCategory1">All Categories</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems1">
+            <div class="menu-item selected" data-category="All Categories">
+              All Categories
+            </div>
+            <div class="menu-item" data-category="Medicines">Medicines</div>
+            <div class="menu-item" data-category="Vitamines">Vitamines</div>
+            <div class="menu-item" data-category="Skincare">Skincare</div>
+            <div class="menu-item" data-category="Medical Equipment">
+              Medical Equipment
+            </div>
+          </div>
+        </div>
+        <!-- Dropdown 2 -->
+        <div class="menu-container" id="menu2">
+          <div class="menu-toggle" id="menuToggle2">
+            <span id="selectedCategory2">All Pharmacies</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems2">
+            <div class="menu-item selected" data-category="All Pharmacies">
+              All Pharmacies
+            </div>
+            <div class="menu-item" data-category="Kissi">Kissi</div>
+            <div class="menu-item" data-category="Ibn Sina">Ibn Sina</div>
+            <div class="menu-item" data-category="Nejah">Nejah</div>
+            <div class="menu-item" data-category="Chiva">Chiva</div>
+            <div class="menu-item" data-category="El Medina">El Medina</div>
+          </div>
+        </div>
+        <!-- Dropdown 3 -->
+        <div class="menu-container" id="menu3">
+          <div class="menu-toggle" id="menuToggle3">
+            <span id="selectedCategory3">All Forms</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems3">
+            <div class="menu-item selected" data-category="All Forms">
+              All Forms
+            </div>
+            <div class="menu-item" data-category="Tablets">Tablets</div>
+            <div class="menu-item" data-category="Capsules">Capsules</div>
+            <div class="menu-item" data-category="Syrup">Syrup</div>
+            <div class="menu-item" data-category="Cream">Cream</div>
+          </div>
+        </div>
+        <!-- Dropdown 4-->
+        <div class="menu-container" id="menu4">
+          <div class="menu-toggle" id="menuToggle4">
+            <span id="selectedCategory4">All Prices</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems4">
+            <div class="menu-item selected" data-category="All Prices">
+              All Prices
+            </div>
+            <div class="menu-item" data-category="0-50">0-50</div>
+            <div class="menu-item" data-category="50-100">50-100</div>
+            <div class="menu-item" data-category="100-200">100-200</div>
+            <div class="menu-item" data-category="200-500">200-500</div>
+            <div class="menu-item" data-category="500+">500+</div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown-right">
+        <!-- Dropdown 5-->
+        <div class="menu-container" id="menu5">
+          <div class="menu-toggle" id="menuToggle5">
+            <span id="selectedCategory5">Most Popular</span>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 10l5 5 5-5"
+                stroke="#4a90e2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="menu-items" id="menuItems5">
+            <div class="menu-item selected" data-category="Most Popular">
+              Most Popular
+            </div>
+            <div class="menu-item" data-category="Newest first">
+              Newest first
+            </div>
+            <div class="menu-item" data-category="Oldest first">
+              Oldest first
+            </div>
+            <div class="menu-item" data-category="Closest to you">
+              Closest to you
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img
+          src="https://www.medicalsintl.com/kms/Utils/GetImage?location=/Content/uploads/Division/clear_1day220107093354421~.png&width=374&height=211"
+          class="product-image"
+        />
+        <button class="add-to-cart" aria-label="Add to cart">
+          <svg viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <h2 class="product-name">Clear 1-day</h2>
+        <p class="product-description">pharmacie Kissi</p>
+        <p class="product-price">540</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.mountainside-medical.com/cdn/shop/files/Amoxicillin-Capsules-500-mg-by-Teva-NDC-00093-3109-53_grande.jpg?v=1722870189"
+          class="product-image"
+        />
+        <button class="add-to-cart" aria-label="Add to cart">
+          <svg viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <h2 class="product-name">Amoxicillin-Capsules 500mg</h2>
+        <p class="product-description">pharmacie El Medina</p>
+        <p class="product-price">280</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://medecify.com/storages/2024/10/EB-C-A-A-A-DEF-F-3000x3358.jpeg"
+          class="product-image"
+        />
+        <button class="add-to-cart" aria-label="Add to cart">
+          <svg viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <h2 class="product-name">Amoxicillin-Tablets 500mg</h2>
+        <p class="product-description">pharmacie Nejah</p>
+        <p class="product-price">370</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://media.pharmaciedesdrakkars.com/media/images/products/doliprane-1000-mg-doliprane8-1688647599.jpg"
+          class="product-image"
+        />
+        <button class="add-to-cart" aria-label="Add to cart">
+          <svg viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <h2 class="product-name">doliprane 1000mg</h2>
+        <p class="product-description">pharmacie Kissi</p>
+        <p class="product-price">300</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.medicalsintl.com/kms/Utils/GetImage?location=/Content/uploads/Division/clear_1day220107093354421~.png&width=374&height=211"
+          class="product-image"
+        />
+        <button class="add-to-cart" aria-label="Add to cart">
+          <svg viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <h2 class="product-name">Clear 1-day</h2>
+        <p class="product-description">pharmacie Ibn Sina</p>
+        <p class="product-price">500</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.mountainside-medical.com/cdn/shop/files/Amoxicillin-Capsules-500-mg-by-Teva-NDC-00093-3109-53_grande.jpg?v=1722870189"
+          class="product-image"
+        />
+        <button class="add-to-cart" aria-label="Add to cart">
+          <svg viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <h2 class="product-name">Amoxicillin-Capsules 500mg</h2>
+        <p class="product-description">pharmacie Chiva</p>
+        <p class="product-price">280</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.chhealthsystem.com/images/1000x550/buy-amoxicillin-online.png"
+          class="product-image"
+        />
+        <button class="add-to-cart" aria-label="Add to cart">
+          <svg viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <h2 class="product-name">Amoxicillin-Tablets 500mg</h2>
+        <p class="product-description">pharmacie Nejah</p>
+        <p class="product-price">370</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://media.pharmaciedesdrakkars.com/media/images/products/doliprane-1000-mg-doliprane8-1688647599.jpg"
+          class="product-image"
+        />
+        <button class="add-to-cart" aria-label="Add to cart">
+          <svg viewBox="0 0 24 24">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </button>
+        <h2 class="product-name">Doliprane 1000mg</h2>
+        <p class="product-description">pharmacie Ibn Sina</p>
+        <p class="product-price">300</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://d20fhuz7ayclct.cloudfront.net/packshots/urn:vidal:pack:320675.png"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">FERVEX 200mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">140</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.shutterstock.com/image-photo/medicine-packet-labelled-spanish-character-260nw-395928634.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Spanish Character 100mg</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">328</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.adiuvopharma.com/wp-content/uploads/2018/06/DGP_0769.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Tramadol 50mg</h2>
+          <p class="product-description">pharmacie Chiva</p>
+          <p class="product-price">425</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://i5.walmartimages.com/seo/Bayer-325mg-Aspirin-200-tabs-Pack-of-3_5fe649da-1ebb-4104-8ae2-b1b05ffcf487_1.c9f38ee8b11bdc8529ba8f923a96a467.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Bayer 325mg</h2>
+          <p class="product-description">pharmacie Nejah </p>
+          <p class="product-price">356</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKekU2IMLRAEQqo5CPaPFt4FQ7JcJl-OUm7w&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Package 5ml</h2>
+          <p class="product-description">pharmacie El medina</p>
+          <p class="product-price">292</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhG657i_AV4qXBpgPPhI7nuNgNQtHQSQscKw&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Amoxicillin<i>evolu</i>GEN 1g</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">646</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.unmc.edu/healthsecurity/transmission/wp-content/uploads/2023/10/Screenshot-2023-10-17-at-19.01.44.png"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">PAXLOVID 10mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">152</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9cAy7Gpw9DMnqTURFrgU3yYbeZHqH66B15w&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Omshal 500mg</h2>
+          <p class="product-description">pharmacie Nejah</p>
+          <p class="product-price">459</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.psychoactif.org/psychowiki/images/thumb/8/85/Tramadol_ixprim.jpg/1200px-Tramadol_ixprim.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">ixprim 325mg</h2>
+          <p class="product-description">pharmacie El medina</p>
+          <p class="product-price">577</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://benu.be/cdn/shop/files/d9183a78ad8db8786c8c84c6fd4522a5_d0a98bb5-c02f-484e-8b86-bb3df73e48a7_730x.progressive.jpg?v=1714112170"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">DAFALGAN 500mg</h2>
+          <p class="product-description">pharmacie Nejah</p>
+          <p class="product-price">228</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.aarp.net/content/dam/aarp/health/conditions_treatments/2022/05/1140-paxlovid.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">paxlovid 250mg</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">160</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://lh3.googleusercontent.com/proxy/Duw8LE0GrgKi-S5rTS0WfWENyH8BxOG02MPmO_l8yTFfRBnVgihSPOFr6UK3NRkZJoyTT2eH2pTxp7ks_kPZHduHhRXpQN_JEbxeiLLAmjX0nU13zrrkWgmH5Tlo8A02obtTU3sJKA"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Risperdal tablets 4mg</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">259</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.pim.mesoigner.fr/mesoigner/8c608b1a99b3d85aecf8d893247ed875/mesoigner-thumbnail-1000-1000-inset/117/003/irbesartan-mylan-75-mg-comprime.webp"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Irbesartan</h2>
+          <p class="product-description">pharmacie Nejah </p>
+          <p class="product-price">649</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.upsa.com/sites/default/files/styles/fiche_produit/public/pack_3d_dalfeine.png?itok=l5i0Ptc8"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">DALFéine 565mg</h2>
+          <p class="product-description">pharmacie Chiva</p>
+          <p class="product-price">325</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.pharmacie-cap3000.com/11662/speciafoldine-04mg-cpr-b-28-grossiste.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Spéciafoldine 0,4mg</h2>
+          <p class="product-description">pharmacie chiva</p>
+          <p class="product-price">336</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.upsa-nosproduits.com/sites/default/files/styles/produit/public/pack_3d_polysilane_sachets_10-2022.png?itok=6C75rRaG"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Polysilane UPSA 2,25g</h2>
+          <p class="product-description">pharmacie chiva</p>
+          <p class="product-price">363</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO29QITWvvlQDXRZr5k18ZYJUCK_w2Zd2Psg&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Drill 3,2mg</h2>
+          <p class="product-description">pharmacie chiva</p>
+          <p class="product-price">986</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.chiesipakistan.com/img/prodotti/314_e7387_clipper.png"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">clipper 5mg</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">699</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.pim.mesoigner.fr/mesoigner/da480a4eeb694b7f87b84e6b66400524/mesoigner-thumbnail-300-300-inset/031/743/amoxicilline-sandoz-125-mg-5-ml-poudre-pour-suspension-buvable.webp"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Amoxicillin <small>Sandoz</small></h2>
+          <p class="product-description">pharmacie chiva</p>
+          <p class="product-price">365</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYbCGWpUaXOIAMb9mEOCG9--uz3r6uy4YCpA&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Co-Arinate Adulte 725mg</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">445</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.pim.mesoigner.fr/mesoigner/b44e2390e5651e3e40e18cd5c3d303fb/mesoigner-thumbnail-1000-1000-inset/604/953/tramadol-sandoz-lp-100-mg-cpr-pell-lp-plq-30.webp"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Tramadol BGR@ L.P 100mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">825</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://pharmalyon.com/54903-thickbox_default/berocca-energie-gout-cerise-60-gommes.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Berocca <i>energie</i></h2>
+          <p class="product-description">pharmacie el medina</p>
+          <p class="product-price">369</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://dryeyeshop.com/cdn/shop/files/Newproduct_84_grande.png?v=1716954770"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Systane complet</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">584</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwR5C8KSClD7kdojn5FATs1ogX4dZuakQzGQ&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">inspiration 500mg</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">382</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn11.bigcommerce.com/s-vhzbg5/images/stencil/1280x1280/products/1764/4816/f9a060fc-2d35-4c03-87e5-e52f3981171d__48648.1473855766.jpg?c=2"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">motilium 10mg</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">359</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.pharmacie-de-sauternes.fr/resize/600x600/media/finish/img/normal/27/3400949004140-permixon-160mg-gelule-60-ip17.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Permixon 160mg</h2>
+          <p class="product-description">pharmacie nejah</p>
+          <p class="product-price">648</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://plcgcc.com/cdn/shop/files/image_ac1bf13d-a979-4c75-85e3-7aefac87ea33.jpg?v=1737118286&width=1214"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">vitaMAX</h2>
+          <p class="product-description">pharmacie nejah</p>
+          <p class="product-price">580</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://media.pharmaciedesdrakkars.com/media/images/products/3326100000526-ld-0029-front-5d2ecdd660b89.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">argiletz</h2>
+          <p class="product-description">pharmacie nejah</p>
+          <p class="product-price">250</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZciPrbRxIOYjjCRVvfikB5iyvcHkBWeP6Sw&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">VIAGRA 100mg</h2>
+          <p class="product-description">pharmacie nejah</p>
+          <p class="product-price">140</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.addictaide.fr/wp-content/uploads/2017/01/pilule-et-tabac.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">PILULE ET TABAC LES RISQUE</h2>
+          <p class="product-description">pharmacie nejah</p>
+          <p class="product-price">648</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.ericfavre.com//products_images/prod_666/d_articulations-douleurs-3c-pharma-myosp-myocalm-contractions-musculaires-spray-front-0.png"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">MyoCalm</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">177</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.mon-pharmacien-conseil.com/15603-large_default/nicopass-15mg-96-pastilles-sans-sucre-menthe-fraiche.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Nicopass 1,5mg</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">789</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn11.bigcommerce.com/s-f8566/images/stencil/1280x1280/products/3516/4491/Systane-Balance-Lubricant-Eye-Drops-10ml__30119.1560243675.jpg?c=2"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <p class="product-name">Systané <i>BALANSE</i></h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">947</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.pim.mesoigner.fr/mesoigner/a89ddbf30a1b4b315059b3d8780917e3/mesoigner-thumbnail-1000-1000-inset/443/705/baclofene-zentiva-10-mg-comprime-secable.webp"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Bacloféne zentiva 10mg</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">458</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://mobile-img.lpcdn.ca/v2/924x/99023aad/b7681fc15114394bba6e30be828f16d9.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Prometrium 100mg</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">680</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_x-3aW29O1w-RUduNgVBgozdSFXTp7UE2zA&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">HUMEX lib 500mg</h2>
+          <p class="product-description">pharmacie chiva</p>
+          <p class="product-price">954</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://shop.toppharm.ch/images/L/PICFRONT3D/1520245.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Telfastin allergo 120mg</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">358</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://imgcdn.mckesson.com/CumulusWeb/Images/Original_Image/1188674_ppkgleft.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Dupixent 300mg/2ml</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">690</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.colispharma.be/8638-large_default/vitamine-d-will-25-000-ui-12-capsules-molles.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">vitamine D will</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">657</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.pim.mesoigner.fr/mesoigner/edf3ac634cb0cee339798ad8994ef6bb/mesoigner-thumbnail-1000-1000-inset/568/995/lisinopril-eg-20-mg-comprime-secable.webp"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">lisinopril 20mg</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">358</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.pharma-gdd.com/media/cache/resolve/product_show/333430303932373632303632312d616e74616c63616c6d2d3031f9b6f3e8.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Antalcalm 140mg</h2>
+          <p class="product-description">pharmacie chiva</p>
+          <p class="product-price">698</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.apotheekdansaert.be/UserFiles/Uploads/images/Products/0073932.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">staurodorm</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">100</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://img.newpharma.net/images/products/fr/500/tilman-antimetil-estomac-leger-36-comprimes.3.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">antimetil 800mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">360</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://grandepharmaciedesaintchamond.fr/78060-large_default/smecta-3g-pdr-or-b-60sach.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">smecta</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">970</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://images.ctfassets.net/f3tkdizvrgki/3pBGqkFxqmYtGomDxxDn3P/9b028fa7c4df70d951b1969e261877af/nic_060245367795_ca_inhaler_refill_4mg_42ct_00180_2000wx2000h-fr-ca"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">nicorette 10mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">486</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYRMuGiYwkTCVt8jSCgRL35Pgm2fFb0rTEWw&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">AdTab 112mg</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">644</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://moncoinsante.com/mcs/77164-large_default/fervex-rhume-jour-et-nuit-paracetamolpseudoephedrine-vitamine-cchlorphenamine-12-comprimes-jours-et-4-comprimes-nuit.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">FERVEXRHUME 504mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">458</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://healthguardmedicine.com/wp-content/uploads/2023/02/IMG_0293-1024x1024.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">vermox 100mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">648</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrXYXEt33bv_FSVXsPQuFSN7oEjPfsiDIpJA&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">CYTOTEC 200ùg</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">784</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.pim.mesoigner.fr/mesoigner/294a30edf359432e165d36f3c55c81bf/mesoigner-thumbnail-1000-1000-inset/942/643/econazole-arrow-l-p-150-mg-ovule-a-liberation-prolongee.webp"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Econazole arrow LP 150mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">258</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.multipharma.be/on/demandware.static/-/Sites-multi-catalog-master/default/dwe204f4c5/e/3/f/a/e3faa0e3f01bc01c65d9cab0375f8b3f37533bf4_image_medipim_00000000000864906921f4316db0f4c68ae07cfa69ffe8c960.jpeg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Tiorfix <i>baby</i></h2>
+          <p class="product-description">pharmacie Kissi</p>
+          <p class="product-price">487</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiebZPH1fNP_eKNQ93-w-Ft4B0Sh1_9qDIcQ&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Actifed</h2>
+          <p class="product-description">pharmacie Chiva</p>
+          <p class="product-price">367</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.upsa.com/sites/default/files/styles/fiche_produit/public/pack_3d_donormyl_pelli.png?itok=3pVajTlB"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">DONORMIL 15mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">677</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://images.ctfassets.net/1wwtzdkddony/3i1Z138A6ESfgOQWfSodmm/f9d68542785cc0c6e192acd29ac3d055/TYL_300450525086_US_Cold_Flu_Severe_Day_Liquid_Honey_Lemon_8OZ_00000.webp"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Tylenol</h2>
+          <p class="product-description">pharmacie Nejah</p>
+          <p class="product-price">358</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://shalina.com/wp-content/uploads/2023/10/Tufpenem-1.png"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">tufpenem</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">257</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://staging.mypharma.be/UserFiles/Uploads/images/Products/1000167/2626968.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">pentomed 20mg</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">157</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVIc_9Kn3ZjJY88HG8u4RGz0FqysJ3SqzduQ&s"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">viabopax</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">972</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.lehning.com/media/cache/resolve/app_shop_product_show_zoom/93/ba/8393c9d620194004c40f28ee4a98.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">viaborpax</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">487</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.europe-pharma.com/82523-large_default/meteoxane-gel-b-60.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Météoxane</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">348</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.soin-et-nature.com/media/cache/shop_product_large_thumbnail/products/7/4/2/7/7427.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">toux grasse 200mg</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">125</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://d3313lwq5y3sh2.cloudfront.net/assets/photos/001/239/135/pharmacy_online_detail/DEPO_MEDROL_80MG_INJ_2794_copy.webp?1682779994"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">DEPO-MEDROL</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">786</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://mednow.ca/cdn/shop/products/TylenolCompleteCoughColdFlu.jpg?v=1622063450"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Tylenol</h2>
+          <p class="product-description">pharmacie chiva</p>
+          <p class="product-price">4697</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://dashboard.800pharmacy.ae/image/catalog/Products/44423563.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">MAALOX</h2>
+          <p class="product-description">pharmacie El Medina</p>
+          <p class="product-price">200</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://femalepet.vteximg.com.br/arquivos/ids/157075-412-412/Anti-Pulgas-e-Carrapatos-Merial-NexGard-68-mg---Caes-de-101-a-25-Kg.jpg?v=635618358140370000"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">NexGard 68mg</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">158</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.pharmagroupe.be/resize/600x600/media/finish/img/normal/88/2612349-desorelle-20-comp-13-x-21.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Desorelle.20</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">2846</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://medecify.com/storages/2024/06/IMG-116-scaled.jpeg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">duphaston 10mg</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">457</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://cdn.shop-pharmacie.fr/images/F10000937-p10.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Macrogol biogaran 10g</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">145</p>
+      </div> 
+
+      <div class="product-card">
+        <img
+          src="https://www.soin-et-nature.com/media/cache/shop_product_large_thumbnail/products/5/1/4/6/1/51461.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">LOMEXIN 600mg</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">1268</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://www.pharmacodel.com/82097-thickbox_default/norlevo-1-comprime.jpg"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">NorLevo 1,5mg</h2>
+          <p class="product-description">pharmacie nejah</p>
+          <p class="product-price">1254</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://hub.vidal.fr/files/uploads/resources/pack-smecta-graise.png"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">smecta fraise 3g</h2>
+          <p class="product-description">pharmacie Ibn Sina</p>
+          <p class="product-price">1425</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="data:image/jpeg;base64,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"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">Louis Widmer</h2>
+          <p class="product-description">pharmacie EL medina</p>
+          <p class="product-price">10</p>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://optiphar.com/media/14/7e/71/1718612894/Dafalgan%20Forte%201%20g%20(%20Inhoud%2040%20capsules%20).png?ts=1718612897"
+          class="product-image"
+          />
+          <button class="add-to-cart" aria-label="Add to cart">
+            <svg viewbox="0 0 24 24">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <h2 class="product-name">DAFALGAN FORTE 1g</h2>
+          <p class="product-description">pharmacie kissi</p>
+          <p class="product-price">146</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
